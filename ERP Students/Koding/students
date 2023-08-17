@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custome Profile UI</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<style>
+		body{
+
+      background:#ffffff;
+		}
+    body {
+			margin: 0;
+			padding: 0;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		
+		main {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		
+		section {
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			margin-top: 40px;
+			margin-bottom: 20px;
+			color: #0507eb;
+		}
+		
+		p, li {
+			margin-bottom: 10px;
+			color: #555;
+		}
+		.our-team{
+			padding: 30px 0 40px;
+			background: #fff;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			 border: 3px solid #0507eb ;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      max-height: 530px;
+     
+      
+		}
+
+		.our-team .pic{
+			display: inline-block;
+			width: 130px;
+			height: 130px;
+			margin-bottom: 50px;
+			/*background:#ff00ac;*/
+			position: relative;
+			z-index: 1;
+		}
+
+		.our-team .pic:before
+		{
+			content: "";
+			width: 100%;
+			background: #0507eb;
+			position: absolute;
+			bottom: 135%;
+			right: 0;
+			left: 0; 
+			transform: scale(3);
+			transition: all 0.3s linear 0s;
+		}
+
+		.our-team:hover .pic:before
+		{
+			height: 100%;
+		}
+
+		.our-team .pic:after
+		{
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: #0507eb;
+			position: absolute;
+			top: 0;
+			left: 0; 
+			z-index: -1;
+		}
+
+		.our-team .pic img{
+			width: 100%;
+			height: auto;
+			border-radius: 50%;
+			transform: scale(1);
+			transition: all 0.9s ease 0s;
+		}
+
+		.our-team:hover .pic img
+		{
+			box-shadow: 0 0 0 14px #0507eb;
+			transform: scale(0.7);
+		}
+
+		.our-team .team-content
+		{
+			margin-bottom: 30px;
+		}
+		
+		.our-team .title{
+			font-size: 22px;
+			font-weight: 700;
+			color:#0507eb;
+			letter-spacing: 1px;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+
+		.our-team .post{
+			display: block;
+			font-size: 15px;
+			color:#0507eb;
+			text-transform: capitalize;
+		}
+
+		.our-team .social{
+			width: 100%;
+			padding:0;
+			margin:0;
+			background: #0507eb;
+			position: absolute;
+			bottom: -100px;
+			left:0;
+			transition: all 0.5 ease 0s;
+		}
+
+		.our-team:hover .social{
+			bottom:0;
+		}
+
+		.our-team .social li{
+			display: inline-block;
+		}
+
+		.our-team .social li a{
+			display: block;
+			padding:10px;
+			font-size: 17px;
+			color:#fff;
+			transition: all 0.3s ease 0s;
+		}
+
+		.our-team .social li a:hover{
+			color:#0507eb;
+			background: #f7f5ec;
+			text-decoration: none;
+			
+		}
+
+	</style>
+</head>	
+<body>
+	
+	
+<body>
+<h2>Doctoral Degree</h2>
+	<main>	
+	
+		<section>
+	
+      <div>
+        
+        <div><h2 >2018 - 2022</h2></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 "> 
+            <div class="our-team">
+              <div class="pic" >
+                <img src="https://erp.hcm-lab.id/files/evi.jpg" alt="" >
+                
+              </div>
+              <div class="team-content">
+                <h3 class="title">Evianita Dewi Fajrianti <h6 class=" text-info">S3 Informatics and Communication</h6><h6 class=" text-info">2022</h6> <a href="https://scholar.google.com/citations?hl=en&user=vM8ZZW8AAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a> </h3>
+                <h6 class="post"><br>Augmented Intelligence, Deep Learning, Computer Vision</h6>
+                <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+                <div class="p-1 mt-3 bg-info text-white "> 
+                  <h5>Research Topic</h5>
+                 
+                </div>
+                <div class="p-1  bg-info text-white "> 
+                 
+                  <h6>A Study of Indoor Navigation Systems Using Unity and Smartphone for User Ambulation
+                  </h6>
+                </div>
+                <div class="p-5  bg-info text-white "> </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 "> 
+            <div class="our-team">
+              <div class="pic" >
+                <img src="https://erp.hcm-lab.id/files/ammakotak.jpg" alt="" >
+                
+              </div>
+              <div class="team-content">
+                <h3 class="title">Amma Liesvarastranta Haz<h6 class=" text-info">S3 Information and Communication</h6><h6 class=" text-info">2022</h6> <a href="https://scholar.google.com/citations?user=Mif8vRwAAAAJ&hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a> </h3>
+                <h6 class="post"><br>NLP, audio transcription, summarization, and text generation</h6>
+                <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+                <div class="p-1 mt-3 bg-info text-white "> 
+                  <h5>Research Topic</h5>
+                 
+                </div>
+                <div class="p-1  bg-info text-white "> 
+                 
+                  <h6>A study of Automatic Online Meeting Note Generation
+                  </h6>
+                </div>
+                <div class="p-5  bg-info text-white "> </div>
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="https://erp.hcm-lab.id/files/mas%20yohan.jpg" alt="">
+              </div>
+              <div class="team-content">
+                <h3 class="title">Yohanes Yohanie F. P.<br><h6 class=" text-info">S3 Information and Communication</h6> <h6 class=" text-info">2021</h6><a href="https://scholar.google.com/citations?hl=en&user=8exGMkYAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+                <h6 class="post"><br>IoT, Microservices, Spatial analysis, Software Engineering, Cloud Computing</h6>
+                <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+                
+                <div class="p-1 mt-3 bg-info text-white "> 
+                  <h5>Research Topic</h5>
+                 
+                </div>
+                <div class="p-1  bg-info text-white "> 
+                 
+                  <h6>Design and Implementation of IoT Application Server Platform
+                  </h6>
+                </div>
+                <div class="p-5  bg-info text-white "> </div>
+              </div>
+             
+            </div>
+          </div>
+          
+        
+          
+            
+            
+            
+          </div>
+		
+        <!-- <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="img-2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Oktafian Sultan Hakim</h3>
+              <span class="post">Design Graphic</span>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="img-4.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Oktafian Sultan Hakim</h3>
+              <span class="post">Design Graphic</span>
+            </div>
+           
+          </div> -->
+          </div>
+		</div>
+   	</section>
+    
+	</main>
+  <main>
+   <h2>Master's Degree</h2>
+	<main>
+		<section>
+			<div>
+     
+      <div><h2 >2018 - 2022</h2></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 "> 
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/mas%20agus.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Agus Prayudi <h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2022</h6><a href="https://scholar.google.com/citations?hl=en&user=FgDe5QgAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a> </h3>
+              <h6 class="post"><br>Artificial Intelligence, Internet of Things, Software Engineering, Blockchain</h6>
+              <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Implementation of Multi Extension in Smart IoT PLatform
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/Sultan.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Oktafian Sultan Hakim<br><h6 class=" text-info">S2 Informatics Engineering</h6> <h6 class=" text-info">2022</h6><a href="https://scholar.google.com/citations?hl=en&user=35t8lXYAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Internet of Things, Blockchain, Front-End, Enterprise Resource Planning.</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Blockchain Implementation For Smart Buildings
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/kirana%20foto.png" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Kirana Hanifati<h6 class=" text-info">S2 Informatics Engineering</h6> <h6 class=" text-info">2022</h6><a href="https://scholar.google.com/citations?hl=en&user=3NtZE8kAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Mixed Reality, WebXR, Artificial Intelligence, Augmented Reality, Virtual Reality</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <!-- <span class="post"><br>Implementation of Intelligence Mixed Reality for Supporting Educational Field and Giving Immersive Experience to Students</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Implementation of Intelligence Mixed Reality for Supporting Educational Field and Giving Immersive Experience to Students
+               
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/ilyaskotak.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Ilyas Yudhistira K. <h6 class=" text-info">S2 Informatics Engineering</h6><h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br> Artificial Intelligence, Object Recognition, OpenDrone Map</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              <!-- <span class="post"><br>Tree Detection and Parameter Extraction for Mangrove Health Analysis using YOLO and OpenDroneMap</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>
+                  Tree Detection and Parameter Extraction for Mangrove Health Analysis using YOLO and OpenDroneMap
+                </h6>
+              </div>
+              <div class="p-4  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+         <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/raflykotak.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Rafly Arief Kanza <h6 class=" text-info">S2 Informatics Engineering</h6><h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br> Artificial Intelligence</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+             
+             
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               </div>
+              <div class="p-1  bg-info text-white "> 
+                <h6>
+                IoT Framework and Cloud Library API Development -Based Diagnosis System with Machine Learning for Health Care
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/mas%20alfankotsk.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Alfandino Rasyid <h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2021</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="text-info"><br> Artificial Intelligence</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+             
+             
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               </div>
+              <div class="p-1  bg-info text-white "> 
+                <h6>
+                IoT Framework and Cloud Library API Development -Based Diagnosis System with Machine Learning for Health Care
+                </h6>
+              </div>
+              <div  class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/faizkotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Muhammad Faiz<h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2020</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="text-info"><br>Control and Automation System</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+             
+             
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               </div>
+              <div class="p-1  bg-info text-white "> 
+                <h6>
+                  The control system for the Mechanum Wheel Automated Guided Vehicle uses a Sliding Mode Controller
+                </h6>
+              </div>
+              <div  class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        
+          
+          
+          
+        </div>
+        <!-- <div><h2 >2021</h2></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 "> 
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/mas%20alfankotsk.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Alfandino Rasyid<h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2022</h6></h3>
+              <span class="post"><br>Artificial Intelligence, IoT, Software Engineering</span>
+              <span class="post"><br>S2 Electrical Engineering</span>
+              
+            </div>
+           
+          </div>
+        </div> -->
+              
+   	</section>
+    </main>
+	</main>
+ 
+  <main>
+   <h2>Bachelor's Degree</h2>
+	<main>
+		<section>
+			<div>
+     
+      <div><h2 >2018 - 2022</h2></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 "> 
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/fatriankotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Achmad Fatrian Romadhoni <h6 class=" text-info">D4 Computer Engineering</h6><h6 class=" text-info">2022</h6> <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Mixed Reality, Platform Developer, computer engineering</h6>
+              <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Implementasi Smart Lab Terintegrasi Dengan Blockchain Dan Mixed Reality Sub Bab : Hololens
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/zackykotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Zacky Maulana Achmad<br><h6 class=" text-info">D4 Computer Engineering</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Mixed Reality, Platform Developer, computer engineering</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Implementasi Smart Lab Terintegrasi Dengan Blockchain Dan Mixed Reality (Subbab) : Magic Leap
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/torehkotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Furqonudin Toreh<h6 class=" text-info">D4 Computer Engineering</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Voice Recognition, Platform Developer, computer engineering</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <!-- <span class="post"><br>Implementation of Intelligence Mixed Reality for Supporting Educational Field and Giving Immersive Experience to Students</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Implementasi Smart Lab Terintegrasi Dengan Blockchain Dan Mixed Reality (Subbab) : Speech Recognition
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/cahyokotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Cahyo Arisabarno <h6 class=" text-info">D4 Computer Engineering</h6><h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br> Blockhain, Platform Developer, computer engineering</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              <!-- <span class="post"><br>Tree Detection and Parameter Extraction for Mangrove Health Analysis using YOLO and OpenDroneMap</span> -->
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>
+                  Implementasi Smart Lab Terintegrasi Dengan Blockchain Dan Mixed Reality (Subbab) : Blockchain
+                </h6>
+              </div>
+              <div class="p-4  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+         <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/Ridhokotak.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Ridho Fathoni Prasetya <h6 class=" text-info">D4 Computer Engineering</h6><h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br> Artificial Intelligence</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+             
+             
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               </div>
+              <div class="p-1  bg-info text-white "> 
+                <h6>
+                  Implementasi Smart Lab Terintegrasi Dengan Blockchain Dan Mixed Reality (Subbab) : Object Recognition 
+                </h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+
+        
+       
+        
+          
+          
+          
+        </div>
+        <!-- <div><h2 >2021</h2></div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 "> 
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/mas%20alfankotsk.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Alfandino Rasyid<h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2022</h6></h3>
+              <span class="post"><br>Artificial Intelligence, IoT, Software Engineering</span>
+              <span class="post"><br>S2 Electrical Engineering</span>
+              
+            </div>
+           
+          </div>
+        </div> -->
+              
+   	</section>
+    </main>
+	</main>
+
+  <main>
+    <h2>VOcational's Degree</h2>
+   <main>
+     <section>
+       <div>
+      
+       <div><h2 >2018 - 2022</h2></div>
+       <div class="row">
+         <div class="col-md-3 col-sm-6 "> 
+           <div class="our-team">
+             <div class="pic">
+               <img src="https://erp.hcm-lab.id/files/septina2.jpg" alt="">
+             </div>
+             <div class="team-content">
+               <h3 class="title">Septina Tri Wulandari <h6 class=" text-info">D3 Teknologi Multimedia Broadcasting </h6><h6 class=" text-info">2022</h6> <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+               <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse </h6>
+               <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+               <div class="p-1 mt-3 bg-info text-white "> 
+                 <h5>Research Topic</h5>
+                
+               </div>
+               <div class="p-1  bg-info text-white "> 
+                
+                 <h6>Sponsorship Toolkit For Immersiv Conference
+                 </h6>
+               </div>
+               <div class="p-5  bg-info text-white "> </div>
+             </div>
+            
+           </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+           <div class="our-team">
+             <div class="pic">
+               <img src="https://erp.hcm-lab.id/files/laras.jpg" alt="">
+             </div>
+             <div class="team-content">
+               <h3 class="title">Nur Fitria Larrasati<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+               <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+               <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+               
+               <div class="p-1 mt-3 bg-info text-white "> 
+                 <h5>Research Topic</h5>
+                
+               </div>
+               <div class="p-1  bg-info text-white "> 
+                
+                 <h6>Implementasi Mise en Scene Pada Video Dokumenter : Peran Gus Dur Terhadap Pondok Pesantren Tebuireng Jombang 
+                 </h6>
+               </div>
+               <div class="p-5  bg-info text-white "> </div>
+             </div>
+            
+           </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/nike3.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Nike Suryawati<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>PENGEMBANGAN PENS INDOOR NAVIGATION UNTUK GEDUNG PASCA SARJANA</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/novanji2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Novanji Akbar Putra S.<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Penerapan teknik handheld pada pembuatan cinematography tentang slice of life</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/fadiah9239d7.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Fadiah Nurhayati<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Indoor Navigation Gedung Pascasarjana PENS</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/syfana.JPG" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Syfana fatma zafira<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Perancangan aset 3d kampus pascasarjana untuk kebutuhan augmented reality</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/mahrus.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Ach. Mahrus<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Pembuatan aset 3D gedung pascasarjana PENS</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/astitin2.jpeg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Astitin Rofi'i<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Pembuatan Aset 3D untuk Aplikasi Social Virtual Reality (SVR)</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/savinafae483.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Savina Nur Inayah<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Multimodel PSDKUVerse Berbasis eXtended Reality</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="https://erp.hcm-lab.id/files/darwis2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Nanda Dharwies F.<br><h6 class=" text-info">D3 Teknologi Multimedia Broadcasting</h6> <h6 class=" text-info">2022</h6><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:30px;height:30px;"></a></h3>
+              <h6 class="post"><br>Multimedia, Broadcasting, and Metaverse</h6>
+              <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+              
+              <div class="p-1 mt-3 bg-info text-white "> 
+                <h5>Research Topic</h5>
+               
+              </div>
+              <div class="p-1  bg-info text-white "> 
+               
+                <h6>Pengembangan Aset Indoor Pascasarjana</h6>
+              </div>
+              <div class="p-5  bg-info text-white "> </div>
+            </div>
+           
+          </div>
+        </div>
+     
+         
+ 
+         
+        
+         
+           
+           
+           
+         </div>
+         <!-- <div><h2 >2021</h2></div>
+       <div class="row">
+         <div class="col-md-3 col-sm-6 "> 
+           <div class="our-team">
+             <div class="pic">
+               <img src="https://erp.hcm-lab.id/files/mas%20alfankotsk.jpeg" alt="">
+             </div>
+             <div class="team-content">
+               <h3 class="title">Alfandino Rasyid<h6 class=" text-info">S2 Electrical Engineering</h6><h6 class=" text-info">2022</h6></h3>
+               <span class="post"><br>Artificial Intelligence, IoT, Software Engineering</span>
+               <span class="post"><br>S2 Electrical Engineering</span>
+               
+             </div>
+            
+           </div>
+         </div> -->
+               
+      </section>
+     </main>
+   </main>
+ 
+</body>
+
+
+	</div>
+</body>
+</html>

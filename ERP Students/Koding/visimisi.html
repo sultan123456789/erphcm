@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custome Profile UI</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<style>
+		body{
+
+      background:#ffffff;
+		}
+    body {
+			margin: 0;
+			padding: 0;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		
+		main {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		
+		section {
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			color: #0507eb;
+		}
+		
+		p, li {
+			margin-bottom: 10px;
+			color: #555;
+		}
+		.our-team{
+			padding: 30px 0 40px;
+			background: #fff;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			 border: 3px solid #0507eb ;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      max-height: 530px;
+     
+      
+		}
+
+		.our-team .pic{
+			display: inline-block;
+			width: 130px;
+			height: 130px;
+			margin-bottom: 50px;
+			/*background:#ff00ac;*/
+			position: relative;
+			z-index: 1;
+		}
+
+		.our-team .pic:before
+		{
+			content: "";
+			width: 100%;
+			background: #0507eb;
+			position: absolute;
+			bottom: 135%;
+			right: 0;
+			left: 0; 
+			transform: scale(3);
+			transition: all 0.3s linear 0s;
+		}
+
+		.our-team:hover .pic:before
+		{
+			height: 100%;
+		}
+
+		.our-team .pic:after
+		{
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: #0507eb;
+			position: absolute;
+			top: 0;
+			left: 0; 
+			z-index: -1;
+		}
+
+		.our-team .pic img{
+			width: 100%;
+			height: auto;
+			border-radius: 50%;
+			transform: scale(1);
+			transition: all 0.9s ease 0s;
+		}
+
+		.our-team:hover .pic img
+		{
+			box-shadow: 0 0 0 14px #0507eb;
+			transform: scale(0.7);
+		}
+
+		.our-team .team-content
+		{
+			margin-bottom: 30px;
+		}
+		
+		.our-team .title{
+			font-size: 22px;
+			font-weight: 700;
+			color:#0507eb;
+			letter-spacing: 1px;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+
+		.our-team .post{
+			display: block;
+			font-size: 15px;
+			color:#0507eb;
+			text-transform: capitalize;
+		}
+
+		.our-team .social{
+			width: 100%;
+			padding:0;
+			margin:0;
+			background: #0507eb;
+			position: absolute;
+			bottom: -100px;
+			left:0;
+			transition: all 0.5 ease 0s;
+		}
+
+		.our-team:hover .social{
+			bottom:0;
+		}
+
+		.our-team .social li{
+			display: inline-block;
+		}
+
+		.our-team .social li a{
+			display: block;
+			padding:10px;
+			font-size: 17px;
+			color:#fff;
+			transition: all 0.3s ease 0s;
+		}
+
+		.our-team .social li a:hover{
+			color:#0507eb;
+			background: #f7f5ec;
+			text-decoration: none;
+			
+		}
+
+	</style>
+</head>	
+<body>
+	
+	
+
+<h2>Vision and Mission</h2>
+	<main>	
+		<!DOCTYPE html>
+		<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>Custome Profile UI</title>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+			<style>
+				body{
+		
+			  background:#ffffff;
+				}
+			body {
+					margin: 0;
+					padding: 0;
+					background-color: #f7f7f7;
+					color: #333;
+				}
+				
+				main {
+					margin: 20px;
+					padding: 20px;
+					background-color: #fff;
+					border: 1px solid #ddd;
+					border-radius: 5px;
+				}
+				
+				section {
+					margin-bottom: 20px;
+				}
+				
+				h2 {
+					margin-top: 20px;
+					margin-bottom: 20px;
+					color: #0507eb;
+				}
+				
+				p, li {
+					margin-bottom: 10px;
+					color: #555;
+				}
+				.our-team{
+					padding: 30px 0 40px;
+					background: #fff;
+					text-align: center;
+					overflow: hidden;
+					position: relative;
+					 border: 3px solid #0507eb ;
+			  border-radius: 5px;
+			  margin-bottom: 20px;
+			  max-height: 530px;
+			 
+			  
+				}
+		
+				.our-team .pic{
+					display: inline-block;
+					width: 130px;
+					height: 130px;
+					margin-bottom: 50px;
+					/*background:#ff00ac;*/
+					position: relative;
+					z-index: 1;
+				}
+		
+				.our-team .pic:before
+				{
+					content: "";
+					width: 100%;
+					background: #0507eb;
+					position: absolute;
+					bottom: 135%;
+					right: 0;
+					left: 0; 
+					transform: scale(3);
+					transition: all 0.3s linear 0s;
+				}
+		
+				.our-team:hover .pic:before
+				{
+					height: 100%;
+				}
+		
+				.our-team .pic:after
+				{
+					content: "";
+					width: 100%;
+					height: 100%;
+					border-radius: 50%;
+					background: #0507eb;
+					position: absolute;
+					top: 0;
+					left: 0; 
+					z-index: -1;
+				}
+		
+				.our-team .pic img{
+					width: 100%;
+					height: auto;
+					border-radius: 50%;
+					transform: scale(1);
+					transition: all 0.9s ease 0s;
+				}
+		
+				.our-team:hover .pic img
+				{
+					box-shadow: 0 0 0 14px #0507eb;
+					transform: scale(0.7);
+				}
+		
+				.our-team .team-content
+				{
+					margin-bottom: 30px;
+				}
+				
+				.our-team .title{
+					font-size: 22px;
+					font-weight: 700;
+					color:#0507eb;
+					letter-spacing: 1px;
+					text-transform: capitalize;
+					margin-bottom: 5px;
+				}
+		
+				.our-team .post{
+					display: block;
+					font-size: 15px;
+					color:#0507eb;
+					text-transform: capitalize;
+				}
+		
+				.our-team .social{
+					width: 100%;
+					padding:0;
+					margin:0;
+					background: #0507eb;
+					position: absolute;
+					bottom: -100px;
+					left:0;
+					transition: all 0.5 ease 0s;
+				}
+		
+				.our-team:hover .social{
+					bottom:0;
+				}
+		
+				.our-team .social li{
+					display: inline-block;
+				}
+		
+				.our-team .social li a{
+					display: block;
+					padding:10px;
+					font-size: 17px;
+					color:#fff;
+					transition: all 0.3s ease 0s;
+				}
+		
+				.our-team .social li a:hover{
+					color:#0507eb;
+					background: #f7f5ec;
+					text-decoration: none;
+					
+				}
+		
+			</style>
+		</head>	
+		<body>
+			
+			
+		
+	
+			<main>	
+				<h2>Vision</h2>
+				<section>
+			
+			  <div>
+				<strong> To be centre of excellence in Research Group in the field of Human Centric & Multimedia in National and International </strong>
+		
+				
+				
+				  
+						</div>
+			   </section>
+		
+			
+			
+			</main>
+		  
+		 <main>
+			<h2>Mission</h2>
+			<section>
+			
+				<div>
+					
+					<ul>
+						<li><strong>Conduct research to combine or integrate the internet of everything technologies for the development or discovery of a new technology to the benefit of the community based on Human Centric</strong></li>
+						<li><strong>Actively participate in developing and implementing the internet of everything technologies for human centric in Indonesia as the national research group</strong></li>
+					
+					
+						
+
+
+
+
+					</ul>
+				</div>
+				 </section>
+		 </main>
+		 
+		
+		 
+		 
+		</body>
+		
+		
+			</div>
+		</body>
+		</html>
+		<section>
+	
+     
+   	</section>
+
+	
+    
+	</main>
+  
+
+ 
+
+ 
+ 
+</body>
+
+
+	</div>
+</body>
+</html>

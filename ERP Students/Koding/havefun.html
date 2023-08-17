@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar CSS</title>
+<style>
+
+	body{
+		padding: 5px;
+		
+	}
+	img {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left:10px;
+		margin-right: 10px;
+	  }
+
+	.row > .column {
+		padding: 10px 10px;
+		margin: 10px 10px;
+	  }
+	h1{
+		color: #17a2b8;
+		text-align: center;
+		font-size: 30px;
+	}
+	  
+	  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+	  
+	  /* Create four equal columns that floats next to eachother */
+	  .column {
+		float: center;
+		width: 25%;
+	  }
+	  
+	  /* The Modal (background) */
+	 
+	  main {
+		margin: 10px;
+		padding: 10px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+	
+	section {
+		margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+</style>
+</head>
+<body>
+ <!-- Images used to open the lightbox -->
+ 	<h1>Having Fun Activity </h1>
+ <main>
+
+	<section>
+	
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/agus1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/agus2.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto%204.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto7.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hv1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div><div class="column">
+			<img src="https://erp.hcm-lab.id/files/hv2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div><div class="column">
+			<img src="https://erp.hcm-lab.id/files/hv3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div><div class="column">
+			<img src="https://erp.hcm-lab.id/files/hv4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto1.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto6.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+
+
+		
+		<div class="column" >
+			<img src="https://erp.hcm-lab.id/files/foto8.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto9.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto16.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/foto17.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+		
+			<div class="column" >
+			<img src="https://erp.hcm-lab.id/files/hf1.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf2.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf3.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+
+	<div class="column" >
+			<img src="https://erp.hcm-lab.id/files/hf5.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf6.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf7.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/hf8.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+  
+		</section>
+	</main>
+ 
+</body>
+</html>

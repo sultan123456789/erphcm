@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar CSS</title>
+<style>
+
+	body{
+		padding: 20px 80px;
+		
+	}
+	img {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left:10px;
+		margin-right: 10px;
+	  }
+
+	.row > .column {
+		padding: 10px 10px;
+		margin: 10px 10px;
+	  }
+	h1{
+		color: #17a2b8;
+		text-align: center;
+		font-size: 50px;
+	}
+	  
+	  .row:after {
+		content: "";
+		display: table;
+		clear: both;
+	  }
+	  
+	  /* Create four equal columns that floats next to eachother */
+	  .column {
+		float: center;
+		width: 25%;
+	  }
+	  
+	  /* The Modal (background) */
+	 
+	  main {
+		margin: 20px;
+		padding: 20px;
+		background-color: #fff;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	}
+	
+	section {
+		margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	}
+</style>
+</head>
+<body>
+ <!-- Images used to open the lightbox -->
+ 	<h1>Partnership</h1>
+ <main>
+
+	<section>
+	
+		<!--//kampus-->
+		<div class="column">
+		
+			<img src="https://www.science.okayama-u.ac.jp/en/wp-content/uploads/2022/09/Okayama-u.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://web.econ.keio.ac.jp/org/pubecon/keio_mark.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://upload.wikimedia.org/wikipedia/en/f/f5/KIT_symbol_logo.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://upload.wikimedia.org/wikipedia/id/c/c4/Badge_ITS.png" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+		<div class="column">
+			<img src="https://unusa.ac.id/wp-content/uploads/2022/03/logo-unusa.jpg" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://upload.wikimedia.org/wikipedia/id/5/53/Logo_Universitas_Negeri_Surabaya_Terbaru.JPG" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+
+        
+			<div class="column" >
+			<img src="https://erp.hcm-lab.id/files/landasi.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column" >
+			<img src="https://pbs.twimg.com/profile_images/1426391039409983490/19B02Cju_400x400.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column">
+			<img src="https://assets.ayobandung.com/crop/0x0:0x0/750x500/webp/photo/2022/01/27/124971435.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://societo.co.id/images/logo-ichil.png" height="250px" width="250px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://1000logos.net/wp-content/uploads/2016/11/Cisco-logo.png" onclick="openModal();currentSlide(3)" class="hover-shadow" height="250" width="250px">
+		</div>
+   
+        	<div class="column" >
+			<img src="https://seeklogo.com/images/T/Toyota-logo-25BC276E4D-seeklogo.com.png" onclick="openModal();currentSlide(4)" class="hover-shadow" height="250" width="250px" >
+		</div>
+		<div class="column">
+			<img src="https://upload.wikimedia.org/wikipedia/id/thumb/5/55/XL_logo_2016.svg/1200px-XL_logo_2016.svg.png" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://cpr-robots.com/wp-content/uploads/2020/10/robolinkmitElektronik-scaled.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://pedulidigital.com/wp-content/uploads/2021/04/logotitle.png" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://radarkaur.disway.id/upload/73b830c2624caf60ec12feaf1c336d65.jpg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/ismart.jpeg" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/kedai.png" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="https://erp.hcm-lab.id/files/kakatoo.png" width="250px" height="250px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		
+		
+  
+		</section>
+	</main>
+ 
+</body>
+</html>

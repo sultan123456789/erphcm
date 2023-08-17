@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Custome Profile UI</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<style>
+		body{
+
+      background:#ffffff;
+		}
+    body {
+			margin: 0;
+			padding: 20px 20px;
+			background-color: #f7f7f7;
+			color: #333;
+		}
+		
+		main {
+			margin: 20px;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+		}
+		
+		section {
+			margin-bottom: 20px;
+		}
+		
+		h2 {
+			margin-top: 40px;
+			margin-bottom: 20px;
+			color: #0507eb;
+		}
+		
+		p, li {
+			margin-bottom: 10px;
+			color: #555;
+		}
+		.our-team{
+			padding: 30px 0 40px;
+			background: #fff;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			 border: 3px solid #0507eb ;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      max-height: 450px;
+     
+      
+		}
+
+		.our-team .pic{
+			display: inline-block;
+			width: 130px;
+			height: 130px;
+			margin-bottom: 50px;
+			/*background:#ff00ac;*/
+			position: relative;
+			z-index: 1;
+		}
+
+		.our-team .pic:before
+		{
+			content: "";
+			width: 100%;
+			background: #0507eb;
+			position: absolute;
+			bottom: 135%;
+			right: 0;
+			left: 0; 
+			transform: scale(3);
+			transition: all 0.3s linear 0s;
+		}
+
+		.our-team:hover .pic:before
+		{
+			height: 100%;
+		}
+
+		.our-team .pic:after
+		{
+			content: "";
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			background: #0507eb;
+			position: absolute;
+			top: 0;
+			left: 0; 
+			z-index: -1;
+		}
+
+		.our-team .pic img{
+			width: 100%;
+			height: auto;
+			border-radius: 50%;
+			transform: scale(1);
+			transition: all 0.9s ease 0s;
+		}
+
+		.our-team:hover .pic img
+		{
+			box-shadow: 0 0 0 14px #0507eb;
+			transform: scale(0.7);
+		}
+
+		.our-team .team-content
+		{
+			margin-bottom: 30px;
+		}
+		
+		.our-team .title{
+			font-size: 16px;
+			font-weight: 700;
+			color:#0507eb;
+			letter-spacing: 0px;
+			text-transform: capitalize;
+			margin-bottom: 5px;
+		}
+
+		.our-team .post{
+			display: block;
+			font-size: 15px;
+			color:#0507eb;
+			text-transform: capitalize;
+		}
+
+		.our-team .social{
+			width: 100%;
+			padding:0;
+			margin:0;
+			background: #0507eb;
+			position: absolute;
+			bottom: -100px;
+			left:0;
+			transition: all 0.5 ease 0s;
+		}
+
+		.our-team:hover .social{
+			bottom:0;
+		}
+
+		.our-team .social li{
+			display: inline-block;
+		}
+
+		.our-team .social li a{
+			display: block;
+			padding:10px;
+			font-size: 17px;
+			color:#fff;
+			transition: all 0.3s ease 0s;
+		}
+
+		.our-team .social li a:hover{
+			color:#0507eb;
+			background: #f7f5ec;
+			text-decoration: none;
+			
+		}
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      color: white;
+      
+    }
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+    
+
+	</style>
+</head>	
+<body>
+	
+	
+<body>
+
+	<main>	
+	
+		<section>
+	
+      <div>
+        
+        <div><h2 >HCM Laboratorium Lecturer</h2></div>
+        <div class="row">
+          <div class="col-md-3 col-sm-6 center"> 
+            <div class="our-team">
+              <div class="pic">
+                <img src="https://erp.hcm-lab.id/files/pakphoto.jpg" alt="">
+              </div>
+              <div class="team-content">
+                <h3 class="title">Sritrusta Sukaridhoto S.T., Ph.D.<h6 class=" text-info">NIP : 197903062002121002</h6><h6 class=" text-info">dhoto@pens.ac.id</h6> </h3>
+                <h6 class="post"><br>Computer Network, Human-centric, Immersive technology, Internet of Things <br></h6>
+                <!-- <span class="post"><br>S2 Electrical Engineering</span> -->
+                <div> 
+                  <br>
+                  <ul>
+                    <li><a href="https://scholar.google.com/citations?hl=en&user=M6sGfNQAAAAJ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:42px;height:42px;"></a></li>
+                    
+                    <li><a href="https://sinta.kemdikbud.go.id/authors/profile/256953"><img src="https://web.syekhnurjati.ac.id/iat/wp-content/uploads/sites/18/2020/09/Sinta.jpg" alt="HTML tutorial" style="width:80px;height:42px;"></a></li>
+                  </ul>
+                 
+                </div>
+               
+              </div>
+             
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="https://erp.hcm-lab.id/files/pak%20agus.jpeg" alt="">
+              </div>
+              <div class="team-content">
+                <h3 class="title">Dr. Muhammad Agus Zainuddin, ST., MT.<br><h6 class=" text-info">NIP : 197808122008011029</h6> <h6 class=" text-info">magusz@pens.ac.id</h6></h3>
+                <h6 class="post"><br>Multimedia, Nanocommunications, Broadcasting, Blockchain</h6>
+                <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+                <ul>
+                  <br>
+                  <li><a href="https://scholar.google.com/citations?hl=en&user=lCcRFSYAAAAJ&view_op=list_works&sortby=pubdate"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:42px;height:42px;"></a></li>
+                  
+                  <li><a href="https://sinta.kemdikbud.go.id/authors/profile/6035218"><img src="https://web.syekhnurjati.ac.id/iat/wp-content/uploads/sites/18/2020/09/Sinta.jpg" alt="HTML tutorial" style="width:80px;height:42px;"></a></li>
+                </ul>
+                
+              </div>
+             
+            </div>
+            
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="our-team">
+              <div class="pic">
+                <img src="https://erp.hcm-lab.id/files/bu%20hesti.jpg" alt="">
+              </div>
+              <div class="team-content">
+                <h3 class="title">Dr. Hestiasari Rante ST., M.Sc.<br><h6 class=" text-info">NIP : 197607152008122001</h6> <h6 class=" text-info">hesti@pens.ac.id</h6></h3>
+                <h6 class="post"><br>child computer interaction, human computer interaction, multimedia</h6>
+                <!-- <span class="post"><br>S2 Informatics Engineering</span> -->
+                <ul>
+                  <br>
+                  <li><a href="https://scholar.google.com/citations?user=ZIyMOacAAAAJ&hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/2048px-Google_Scholar_logo.svg.png" alt="HTML tutorial" style="width:42px;height:42px;"></a></li>
+                  
+                  <li><a href="https://sinta.kemdikbud.go.id/authors/profile/6042599"><img src="https://web.syekhnurjati.ac.id/iat/wp-content/uploads/sites/18/2020/09/Sinta.jpg" alt="HTML tutorial" style="width:80px;height:42px;"></a></li>
+                </ul>
+                
+                
+                
+                
+              </div>
+        
+          
+            
+            
+            
+          </div>
+		
+        <!-- <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="img-2.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Oktafian Sultan Hakim</h3>
+              <span class="post">Design Graphic</span>
+            </div>
+           
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="our-team">
+            <div class="pic">
+              <img src="img-4.jpg" alt="">
+            </div>
+            <div class="team-content">
+              <h3 class="title">Oktafian Sultan Hakim</h3>
+              <span class="post">Design Graphic</span>
+            </div>
+           
+          </div> -->
+          </div>
+		</div>
+   	</section>
+    
+	</main>
+  
+ 
+  
+ 
+</body>
+
+
+	</div>
+</body>
+</html>
